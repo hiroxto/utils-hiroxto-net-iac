@@ -21,9 +21,11 @@ resource "cloudflare_pages_project" "utils-hiroxto-net-iac" {
       deployments_enabled           = true
       production_deployment_enabled = true
       preview_deployment_setting    = "all"
-      preview_branch_excludes       = []
       preview_branch_includes = [
         "*",
+      ]
+      preview_branch_excludes = [
+        "renovate/linters",
       ]
     }
   }
