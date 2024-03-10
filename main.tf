@@ -1,4 +1,4 @@
-resource "cloudflare_pages_project" "utils-hiroxto-net" {
+resource "cloudflare_pages_project" "utils-hiroxto-net-iac" {
   account_id        = var.account_id
   name              = var.project_name
   production_branch = "master"
