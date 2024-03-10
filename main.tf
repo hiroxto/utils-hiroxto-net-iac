@@ -6,7 +6,6 @@ resource "cloudflare_pages_project" "utils-hiroxto-net-iac" {
   build_config {
     build_command       = "pnpm run generate"
     destination_dir     = "dist"
-    root_dir            = "/"
     web_analytics_tag   = var.web_analytics_tag
     web_analytics_token = var.web_analytics_token
   }
