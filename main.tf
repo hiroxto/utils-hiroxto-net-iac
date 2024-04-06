@@ -25,6 +25,7 @@ resource "cloudflare_pages_project" "page" {
       ]
       preview_branch_excludes = [
         "renovate/linters",
+        "renovate/actions-*",
       ]
     }
   }
